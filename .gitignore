@@ -1,0 +1,16 @@
+/result*
+/repl-result*
+temp/
+
+dist/
+/.venv
+__pycache__/
+*.egg-info
+
+.pdm.toml
+.pdm-python
+.pdm-build
+
+.pytest_cache
+.coverage
+

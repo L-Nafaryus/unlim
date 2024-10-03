@@ -1,0 +1,32 @@
+[project]
+name = "unlim"
+version = "0.0.1"
+description = "Tasks"
+dependencies = []
+requires-python = ">=3.12,<3.13"
+license = {text = "MIT"}
+
+[tool.pdm.build]
+includes = [ "src/task_one", "src/task_two" ]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pyright]
+reportGeneralTypeIssues = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black<24.0.0,>=23.3.0",
+    "pytest<8.0.0,>=7.3.2",
+    "pyflakes<4.0.0,>=3.0.1",
+]
+
